@@ -1,9 +1,9 @@
-/shelf/
-/workspace.xml
-/codewars.iml
-/misc.xml
-/modules.xml
-/vcs.xml
+shelf/
+workspace.xml
+codewars.iml
+misc.xml
+modules.xml
+vcs.xml
 .idea
 # Editor-based HTTP Client requests
 /httpRequests/
