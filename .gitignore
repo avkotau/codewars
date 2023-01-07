@@ -4,5 +4,6 @@
 /misc.xml
 /modules.xml
 /vcs.xml
+.idea
 # Editor-based HTTP Client requests
 /httpRequests/
