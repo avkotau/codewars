@@ -6,6 +6,7 @@ function countPositivesSumNegatives(input) {
     } else {
         input.filter((num) => num > 0 ? a++ : b += num);
     }
+
     console.log([a , b]) ;
 
 }
