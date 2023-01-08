@@ -1,5 +1,4 @@
 function check(a, x) {
-    //let result =
     return a.includes(x)
 }
 
