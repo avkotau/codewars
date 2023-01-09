@@ -6,6 +6,13 @@ function rowSumOddNumbers(n) {
 rowSumOddNumbers(42)
 //42, 74088
 
+//or
+//function rowSumOddNumbers(n) {
+//   return Math.pow(n, 3);
+// }
+
+
+
 //           1
 //           3     5
 //        7     9    11
