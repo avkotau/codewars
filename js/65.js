@@ -3,6 +3,13 @@ function oddOrEven(array) {
         return array.reduce((a,b)=>a+b) %2 === 0 ? 'even' : 'odd'
 }
 // < 0 || sum === -0 ||  sum === 1 ? 'odd' : 'even'
+
+//or
+//function oddOrEven(arr) {
+//   return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+// }
+
+
 oddOrEven([-1023, -1, 3]) // odd
 
          oddOrEven([0])// 'even')
