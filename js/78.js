@@ -2,6 +2,10 @@ function isPalindrome(x) {
     console.log(x.toLowerCase().split('').reverse().join('') === x.toLowerCase());
 }
 
+//or
+//function isPalindrome(x, str = x.toLowerCase()) {
+//   return str === [...str].reverse().join('')
+// }
 
 isPalindrome("a") //, true));
 isPalindrome("aba") //, true));
