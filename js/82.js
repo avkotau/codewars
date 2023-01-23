@@ -5,6 +5,9 @@ function domainName(url){
 
     console.log(domain)
 }
+//or
+//const domainName = url =>
+//   url.replace(/.*\/\/|www.|\..*/g, ``);
 
 
 domainName("http://google.com") //, "google");
