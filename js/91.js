@@ -13,6 +13,15 @@ function solution(string) {
     console.log(str)
 
 }
+//or
+// function solution(string) {
+//   return(string.replace(/([A-Z])/g, ' $1'));
+//
+// }
+//or
+//function solution(string) {
+//   return string.replace(/([a-z])([A-Z])/g, "$1 $2");
+// }
 
 solution('camelCasing') //, 'camel Casing', 'Unexpected result')
 solution('camelCasingTest') //, 'camel Casing Test', 'Unexpected result')
