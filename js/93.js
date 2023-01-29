@@ -8,6 +8,14 @@ const rps = (p1, p2) => {
     //return p1 === scissors && p2 === paper ? "Player 1 won!" :
 };
 
+//or
+//const rps = (p1, p2) => {
+//   if(p1 === p2) {
+//     return 'Draw!'
+//   };
+//   return `Player ${/rockscissors|scissorspaper|paperrock/.test(p1+p2)? 1 : 2} won!`;
+// }
+
 
 //it('player 1 win', function() {
     rps('rock', 'scissors') // getMsg(1));
