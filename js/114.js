@@ -6,7 +6,6 @@ function findMultiples(integer, limit) {
         if (integerIncrease <= limit) {
             result.push(integerIncrease)
             integerIncrease += integer
-
         }
 
     }
@@ -23,7 +22,6 @@ function findMultiples(integer, limit) {
 //
 //   return result
 // }
-
 
 findMultiples(5, 25) // [5, 10, 15, 20, 25])
 // findMultiples(1, 2) // [1, 2])
