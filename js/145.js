@@ -9,6 +9,8 @@ function solve(s){
     }
 
 }
+//or
+//const solve = s => s.replace(/[A-Z]/g,'').length < s.length/2 ? s.toUpperCase() : s.toLowerCase()
 
 console.log(solve("code")) //,"code");
 solve("CODe") //,"CODE");
