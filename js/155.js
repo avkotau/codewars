@@ -9,6 +9,8 @@ function incrementString (strng) {
             ? body + (+lastDigit + 1)
             : incrementString(body) + "0";
 }
+//or
+// let incrementString = str => str.replace(/([0-8]|\d?9+)?$/, (e) => e ? + e + 1 : 1)
 
 incrementString("fo99obar99");// "fo99obar100"
 incrementString("foobar000");// "foobar001"
