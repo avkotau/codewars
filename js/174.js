@@ -10,7 +10,6 @@ function expandedForm(num) {
     console.log(arr.join(' + '))
 }
 //or
-//
 // const expandedForm = n => n.toString()
 //     .split("")
 //     .reverse()
