@@ -9,7 +9,6 @@ function getCount(str) {
             }
         }
     }
-
     console.log(result)
 }
 
