@@ -46,26 +46,50 @@ const tree = {
     ],
 }; //36
 
-let result2 = 0
-const forArray = (array) => {
-    array.forEach(el => {
+// let result2 = 0
+// const forArray = (array) => {
+//     array.forEach(el => {
+//
+//         result2 += el.value
+//         if (Array.isArray(el.children)) {
+//             forArray(el.children)
+//         }
+//     })
+// }
+//
+// const quantityValue2 = (tree) => {
+//     for (let treeElement in tree) {
+//         if (Array.isArray(tree[treeElement])) {
+//             forArray(tree[treeElement])
+//         } else {
+//             result2 += tree.value
+//         }
+//     }
+//     return result2
+// }
+//
+// console.log(quantityValue2(tree))
 
-        result2 += el.value
-        if (Array.isArray(el.children)) {
-            forArray(el.children)
-        }
-    })
-}
+//variant 2
+const quantityValue = (partTree) => {
+    let result = 0;
 
-const quantityValue2 = (tree) => {
-    for (let treeElement in tree) {
-        if (Array.isArray(tree[treeElement])) {
-            forArray(tree[treeElement])
-        } else {
-            result2 += tree.value
-        }
+    if (Array.isArray(partTree)) {
+        partTree.forEach(childNode => {
+            result += quantityValue(childNode);
+        });
+        return result;
     }
-    return result2
+
+    if (partTree.value) {
+        result += partTree.value;
+    }
+
+    if (partTree.children) {
+        result += quantityValue(partTree.children);
+    }
+
+    return result;
 }
 
-console.log(quantityValue2(tree))
+console.log(quantityValue(tree))
