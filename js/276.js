@@ -1,3 +1,14 @@
+//111
+//A palindromic string reads the same backward as forward, such as 'madam'.
+// Now given a string, count how many substrings it has?
+// Like 'madam', it has following palindromic strings:
+// 'm'
+// 'a'
+// 'd'
+// 'a'
+// 'm'
+// 'ada'
+// 'madam'
 function countPalindromicSubstr(str) {
     let count = 0;
     for (let i = 0; i < str.length; i++) {
