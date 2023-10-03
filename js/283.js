@@ -21,7 +21,7 @@ function validate(str) {
     const stack = [];
 
     for (let c of str) {
-        const last = stack.at(-1); // last element
+        const last = stack.at(-1); // first element
 
         if (map[last] === c) {
             stack.pop();
