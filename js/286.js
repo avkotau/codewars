@@ -18,7 +18,7 @@ function uncompress(str) {
             stack.push(Number(num));
             num = '';
         } else if (char === ')') {
-            // If the character is a closing parenthesis, unpack the contents up to the last opening parenthesis
+            // If the character is a closing parenthesis, unpack the contents up to the last opening parenthesis6
             let temp = '';
             while (typeof stack[stack.length - 1] !== 'number') {
                 temp = stack.pop() + temp;

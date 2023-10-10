@@ -7,16 +7,16 @@
 // This is an easy problem, What is the time & space complexity of your approach?
 
 function getIntersection(arr1, arr2) {
-    // if (arr1.length === 0 || arr2.length === 0) return []
-    // let concatArrays = []
-    // for (let i = 0; i < arr1.length; i++) {
-    //     for (let j = 0; j < arr2.length; j++) {
-    //         if (arr1[i] === arr2[j]) {
-    //             concatArrays.push(arr2[j])
-    //         }
-    //     }
-    // }
-    // return Array.from(new Set(concatArrays))
+    if (arr1.length === 0 || arr2.length === 0) return []
+    let concatArrays = []
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j]) {
+                concatArrays.push(arr2[j])
+            }
+        }
+    }
+    return Array.from(new Set(concatArrays))
 
 
 }
