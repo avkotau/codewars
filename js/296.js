@@ -13,9 +13,12 @@ const count = (function () {
         return count = 0
     }
 
+    Object.prototype.reset = function () {
+        return count = 0
+    }
+
     return incriment
 })()
-
 
 console.log(count())
 console.log(count())
