@@ -20,7 +20,7 @@ function quickSort(arr) {
     const greater = []
 
     for (let i = 0; i < arr.length - 1; i++) {
-        if (equal > arr[i]) {
+        if (equal >= arr[i]) {
             less.push(arr[i])
         }
         if (equal < arr[i]) {
